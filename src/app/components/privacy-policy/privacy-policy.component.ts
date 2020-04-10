@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Router, ActivatedRoute } from '@angular/router';
+import { VendoruploadService } from '../../services/vendorupload.service';
+
 
 @Component({
   selector: 'app-privacy-policy',
@@ -9,6 +11,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class PrivacyPolicyComponent implements OnInit {
   title:string;
+
+  upldsvc:VendoruploadService;
   constructor(private router:Router,private activatedRoute:ActivatedRoute) { }
 
   ngOnInit() {
